@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+  <title>Sample API Query</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="app.js"></script>
+
+</head>
+<body ng-controller="MainController">
+  <h1>Sample API Query</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>UserID</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="post in posts">
+        <td>{{ post.id }}</td>
+        <td>{{ post.title }}</td>
+        <td>{{ post.userId }}</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
